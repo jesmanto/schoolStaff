@@ -1,0 +1,21 @@
+public class NonAcademicStaff extends Staff{
+    NonAcademicStaff(String idColor){
+        super(idColor, false);
+    }
+
+    @Override
+    public int getAgeLimit() {
+        return 30;
+    }
+
+    @Override
+    public String getSalary(){
+        return "50,000";
+    }
+
+    @Override
+    public String disMiss(String staffName){
+        return "Please mind the scope of your appointment";
+    }
+
+}
